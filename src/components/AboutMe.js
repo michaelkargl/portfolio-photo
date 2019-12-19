@@ -11,8 +11,7 @@ class AboutMe extends Component {
             <section className="component--aboutme" >
                 <h2>More about me</h2>
                 <p>
-                    Software Developer by day. Wannabe Photographer by night 😎🌟.
-                    This page is still under heavy development so please be patient :3
+                    Software Developer by day. Wannabe Photographer by night 😎🌟
                 </p>
             </section>
         );
