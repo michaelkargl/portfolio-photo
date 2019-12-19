@@ -1,8 +1,8 @@
-import React from 'react';
 
+import React from 'react';
 import Layout from '../components/Layout';
 import Gallery from '../components/Gallery';
-import WindowAccessor from '../accessors/WindowAccessor';
+
 
 const img_set = [
   {
@@ -176,18 +176,22 @@ const img_set = [
 
 ];
 
+
+/*
+import WindowAccessor from '../accessors/WindowAccessor';
+
 /**
  * @summary searches a query for parameters
  * @param {*} key: string
  * @example Given a current url 'http://localhost:8000/?category=all':
  * getQueryVariable('category') => 'all'
- */
+
 function getQueryVariable(key)
 {
   const windowAccessor = new WindowAccessor(window);
 
   try {
-    var location = windowAccessor.get().location;
+    var location = this.props.location;
 
   } catch {
     return undefined;
@@ -206,10 +210,11 @@ function getQueryVariable(key)
   
   return undefined;
 }
+ */
 
 const IndexPage = () => (
   <Layout>
-    <Gallery images={img_set} category={getQueryVariable('category')}/>
+    <Gallery images={img_set} />
   </Layout>
 );
 
