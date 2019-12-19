@@ -13,8 +13,8 @@ export default function Header({ onAction = () => {} }) {
       <nav>
         <ul>
           <li>
-            <Link to="/Element" className="icon fa-plus">
-              Elements
+            <Link to="?category=all" className="icon fa-plus">
+              Gallery
             </Link>
             <a
               href="#footer"

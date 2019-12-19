@@ -8,7 +8,7 @@ class Gallery extends Component {
 
     this.state = {
       lightboxIsOpen: false,
-      currentImage: 0,
+      currentImage: 0
     };
 
     this.closeLightbox = this.closeLightbox.bind(this);
@@ -51,10 +51,19 @@ class Gallery extends Component {
 
     this.gotoNext();
   }
+  
   renderGallery() {
-    const { images } = this.props;
+    let images = this.props.images;
+
+    if (!!this.props.category)
+      images = images.filter(i => !!i.tags ? i.tags.includes(this.props.category) : true);
 
     if (!images) return;
+
+    if (this.props.categories) {
+      images = [...images.filter(i => false)];
+    }
+    
 
     const gallery = images.map((obj, i) => {
       return (
@@ -108,6 +117,7 @@ class Gallery extends Component {
 Gallery.displayName = 'Gallery';
 Gallery.propTypes = {
   images: PropTypes.array,
+  category: PropTypes.string
 };
 
 export default Gallery;
