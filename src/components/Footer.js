@@ -2,6 +2,7 @@ import React from 'react';
 
 import config from '../../config';
 import ContactMe from './ContactMe';
+import AboutMe from './AboutMe';
 
 export default function Footer({ onClose, isVisible }) {
   return (
@@ -9,13 +10,7 @@ export default function Footer({ onClose, isVisible }) {
       <div className="inner split">
         
         <div>
-          <section>
-            <h2>More about me</h2>
-            <p>
-              Software Developer by day. Wannabe Photographer by night 😎🌟.
-              This page is still under heavy development so please be patient :3
-            </p>
-          </section>
+          <AboutMe></AboutMe>
         </div>
         
         <div>
