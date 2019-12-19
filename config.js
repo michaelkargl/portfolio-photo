@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Multiverse', // <title>
+  siteTitle: 'osaPortfolio', // <title>
   manifestName: 'Multiverse',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
@@ -7,30 +7,30 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-multiverse/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav',
-  subHeading: 'Web Developer',
+  pathPrefix: `/osasoftworks/portfolio/osaportfolio/`, // This path is subpath of your hosting https://domain/portfolio
+  heading: 'OSA | Michael Kargl',
+  subHeading: 'Software/Photo Designer',
   // social
   socialLinks: [
     {
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      icon: 'fa-gitlab',
+      name: 'GitLab',
+      url: 'https://gitlab.com/michaelkargl/',
     },
     {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
+      icon: 'fa-instagram',
+      name: 'Instagram',
+      url: 'https://www.instagram.com/michaelkargl/',
     },
     {
-      icon: 'fa-facebook',
-      name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
+      icon: 'fa-500px',
+      name: '500px',
+      url: 'https://500px.com/ohsnaparts',
     },
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'mailto:anubhav.srivastava00@gmail.com',
-    },
+      url: 'mailto:michael.kargl@posteo.net',
+    }
   ],
 };
