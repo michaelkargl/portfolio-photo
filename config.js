@@ -15,7 +15,7 @@ module.exports = {
     {
       icon: 'fa-gitlab',
       name: 'GitLab',
-      url: 'https://gitlab.com/michaelkargl/',
+      url: 'https://gitlab.com/osamichaelkargl/',
     },
     {
       icon: 'fa-instagram',
