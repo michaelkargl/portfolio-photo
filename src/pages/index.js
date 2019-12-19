@@ -184,9 +184,15 @@ const img_set = [
  */
 function getQueryVariable(key)
 {
-  const locationAccessor = win => win.location;
+  const windowAccessor = new WindowAccessor(window);
 
-  const location = locationAccessor(window);
+  try {
+    var location = windowAccessor.get().location;
+
+  } catch {
+    return undefined;
+  }
+
   const query = location.search.substring(1);
   const vars = query.split("&");
   
