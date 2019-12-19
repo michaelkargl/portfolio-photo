@@ -13,11 +13,6 @@ module.exports = {
   // social
   socialLinks: [
     {
-      icon: 'fa-gitlab',
-      name: 'GitLab',
-      url: 'https://gitlab.com/osamichaelkargl/',
-    },
-    {
       icon: 'fa-instagram',
       name: 'Instagram',
       url: 'https://www.instagram.com/michaelkargl/',
@@ -31,6 +26,11 @@ module.exports = {
       icon: 'fa-envelope-o',
       name: 'Email',
       url: 'mailto:michael.kargl@posteo.net',
+    },
+    {
+      icon: 'fa-gitlab',
+      name: 'GitLab',
+      url: 'https://gitlab.com/osamichaelkargl/',
     }
   ],
 };
