@@ -2,6 +2,7 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import Gallery from '../components/Gallery';
+import WindowAccessor from '../accessors/WindowAccessor';
 
 const img_set = [
   {
@@ -183,10 +184,13 @@ const img_set = [
  */
 function getQueryVariable(key)
 {
-  var query = window.location.search.substring(1);
-  var vars = query.split("&");
+  const locationAccessor = win => win.location;
+
+  const location = locationAccessor(window);
+  const query = location.search.substring(1);
+  const vars = query.split("&");
   
-  for (var i = 0; i < vars.length; i++) {
+  for (let i = 0; i < vars.length; i++) {
     var pair = vars[i].split("=");
 
     if (pair[0] == key) {
