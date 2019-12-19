@@ -9,7 +9,7 @@ module.exports = {
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/osasoftworks/portfolio/osaportfolio/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'OSA | Michael Kargl',
-  subHeading: 'Software/Photo Designer',
+  subHeading: '',
   // social
   socialLinks: [
     {
