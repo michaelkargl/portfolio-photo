@@ -15,7 +15,7 @@ module.exports = {
     {
       icon: 'fa-instagram',
       name: 'Instagram',
-      url: 'https://www.instagram.com/michaelkargl/',
+      url: 'https://www.instagram.com/osamichaelkargl/',
     },
     {
       icon: 'fa-500px',
