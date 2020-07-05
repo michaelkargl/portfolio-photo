@@ -30,7 +30,7 @@ module.exports = {
     {
       icon: 'fa-gitlab',
       name: 'GitLab',
-      url: 'https://gitlab.com/ohsnaparts',
+      url: 'https://gitlab.com/michaelkargl',
     }
   ],
 };
